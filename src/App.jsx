@@ -8,7 +8,7 @@ function fetchDataComponent() {
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
   const [city, setCity] = useState("");
-  const apiKey ='Your API KEY';
+  const apiKey =import.meta.env.VITE_API_KEY;
 
   const fetchData = async () => {
     if (!city) return;
